@@ -1,0 +1,75 @@
+
+
+# Import the necessary libraries
+import csv
+
+
+def read_data(filename):
+    """ Read the data from the CSV file and return a list of lists """
+    # Open the file in read mode
+    with open(filename, 'r') as file:
+        # Create a reader object
+        reader = csv.reader(file)
+        data = list(reader)
+    # Return the data
+    return data
+
+
+def write_results(filename, data):
+    """ Write a new CSV file with the contents of a matrix """
+    # Open the file in write mode
+    with open(filename, 'w') as file:
+        # Create a writer object
+        writer = csv.writer(file)
+        # Write the data
+        writer.writerows(data)
+
+
+def make_numeric(data):
+    """ Convert the values of the matrix to integers """
+    # Convert the values to integers
+    for row in data[1:]:
+        for i in range(4, len(row) - 1):
+            row[i] = int(row[i])
+
+### WRITE YOUR FUNCTIONS HERE ###
+
+
+def average(data):
+	choice = input("Average speed of legendary or non legendary Pokemon. Enter leg or nleg: ")
+	leg_total = 0
+	leg_count = 0
+	nleg_total = 0
+	nleg_count = 0
+	#Get both averages using counters and additions
+	for pok in data[1:]: #Go through the list starting on the first row (skipping 0)
+		if pok[-1] == 'True': #Test to see if the pokemon is legendary
+			leg_total += pok[-3]
+			leg_count += 1
+		else:
+			nleg_total += pok[-3]
+			nleg_count += 1
+	#Decide which average to use, depending on the user input
+	if choice == 'leg':
+		result = leg_total / leg_count
+	elif choice == 'nleg':
+		result = nleg_total / nleg_count
+	return result
+
+def print_matrix(data, element):
+	for row in data: #Go through the list
+		if row[2] == element or row[3] == element: #First set of conditions, the pokemon element must be true in at least one of the types
+			if row[-1] == 'True': #Second condition, the pokemon must be legendary
+				for item in row: #Go through each item in the row
+					print(item, end="\t") #Print the items in the row as a format
+				print()
+
+def main():
+	filename = "Pokemon.csv"
+	data = read_data(filename)
+	make_numeric(data) #Read the file and transform into numeric values so that they can be manipulated
+	print(average(data)) #Call function to get average
+	element = input("Enter element with a capital first letter: ") 
+	print_matrix(data, element) #Print the matrix based on the user input
+
+main()
