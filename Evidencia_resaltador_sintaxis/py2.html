@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="python_css.css">
+</head>
+<body>
+<pre>
+
+
+<span class= reserved >import</span> <span class= variable >csv</span>
+
+
+
+<span class= reserved >def</span> <span class= function >read_file</span><span class= punctuation >(</span><span class= variable >file_name</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= string >"""Store the contents of the file as a matrix"""</span>
+
+    <span class= reserved >with</span> <span class= function >open</span><span class= punctuation >(</span><span class= variable >file_name</span><span class= punctuation >,</span> <span class= variable >newline</span><span class= operator >=</span><span class= string >''</span><span class= punctuation >)</span> <span class= reserved >as</span> <span class= variable >file</span><span class= punctuation >:</span>
+
+        <span class= variable >reader</span> <span class= operator >=</span> <span class= variable >csv</span><span class= punctuation >.</span><span class= function >reader</span><span class= punctuation >(</span><span class= variable >file</span><span class= punctuation >)</span>
+
+        <span class= variable >data</span> <span class= operator >=</span> <span class= function >list</span><span class= punctuation >(</span><span class= variable >reader</span><span class= punctuation >)</span>
+
+    <span class= reserved >return</span> <span class= variable >data</span>
+
+
+
+<span class= reserved >def</span> <span class= function >write_file</span><span class= punctuation >(</span><span class= variable >file_name</span><span class= punctuation >,</span> <span class= variable >data</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= string >"""Save the contents of a matriz into a file"""</span>
+
+    <span class= reserved >with</span> <span class= function >open</span><span class= punctuation >(</span><span class= variable >file_name</span><span class= punctuation >,</span> <span class= string >'w'</span><span class= punctuation >,</span> <span class= variable >newline</span><span class= operator >=</span><span class= string >''</span><span class= punctuation >)</span> <span class= reserved >as</span> <span class= variable >file</span><span class= punctuation >:</span>
+
+        <span class= variable >writer</span> <span class= operator >=</span> <span class= variable >csv</span><span class= punctuation >.</span><span class= function >writer</span><span class= punctuation >(</span><span class= variable >file</span><span class= punctuation >)</span>
+
+        <span class= variable >writer</span><span class= punctuation >.</span><span class= function >writerows</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >def</span> <span class= function >print_matrix</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= string >"""Display the contents of a matrix with a nice format"""</span>
+
+    <span class= reserved >for</span> <span class= variable >row</span> <span class= reserved >in</span> <span class= variable >data</span><span class= punctuation >:</span>
+
+        <span class= reserved >for</span> <span class= variable >item</span> <span class= reserved >in</span> <span class= variable >row</span><span class= punctuation >:</span>
+
+            <span class= function >print</span><span class= punctuation >(</span><span class= variable >f</span><span class= string >"{item:10}"</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >' '</span><span class= punctuation >)</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >def</span> <span class= function >make_numeric</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= string >""" Convert the values of the matrix to integers """</span>
+
+    <span class= comment ># Convert the values to float</span>
+
+    <span class= reserved >for</span> <span class= variable >row</span> <span class= reserved >in</span> <span class= variable >data</span><span class= punctuation >[</span><span class= number >1</span><span class= punctuation >:</span><span class= punctuation >]</span><span class= punctuation >:</span>
+
+        <span class= reserved >for</span> <span class= variable >i</span> <span class= reserved >in</span> <span class= function >range</span><span class= punctuation >(</span><span class= number >1</span><span class= punctuation >,</span> <span class= number >8</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+            <span class= variable >row</span><span class= punctuation >[</span><span class= variable >i</span><span class= punctuation >]</span> <span class= operator >=</span> <span class= function >float</span><span class= punctuation >(</span><span class= variable >row</span><span class= punctuation >[</span><span class= variable >i</span><span class= punctuation >]</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >def</span> <span class= function >check_start</span><span class= punctuation >(</span><span class= variable >current_date</span><span class= punctuation >,</span> <span class= variable >starting_date</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= string >"""This function determines if the date that the user gives is in the data"""</span>
+
+    <span class= reserved >if</span> <span class= variable >current_date</span> <span class= operator >==</span> <span class= variable >starting_date</span><span class= punctuation >:</span>
+
+        <span class= reserved >return</span> <span class= reserved >True</span>
+
+    <span class= reserved >else</span><span class= punctuation >:</span>
+
+        <span class= reserved >return</span> <span class= reserved >False</span>
+
+
+
+<span class= reserved >def</span> <span class= function >check_end</span><span class= punctuation >(</span><span class= variable >current_date</span><span class= punctuation >,</span> <span class= variable >ending_date</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= string >"""This function determines if hte date given by the user is in the data"""</span>
+
+    <span class= reserved >if</span> <span class= variable >current_date</span> <span class= operator >==</span> <span class= variable >ending_date</span><span class= punctuation >:</span>
+
+        <span class= reserved >return</span> <span class= reserved >True</span>
+
+    <span class= reserved >else</span><span class= punctuation >:</span>
+
+        <span class= reserved >return</span> <span class= reserved >False</span>
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >highs_lows</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >,</span> <span class= variable >start_index</span><span class= punctuation >,</span> <span class= variable >end_index</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= string >"""This function detirmens the higs and lows in dates given by the dates, and is called when the user chooses option 2"""</span>
+
+    <span class= variable >highs</span> <span class= operator >=</span> <span class= number >0</span>
+
+    <span class= variable >lows</span> <span class= operator >=</span> <span class= number >10000000</span>
+
+    <span class= reserved >for</span> <span class= variable >row</span> <span class= reserved >in</span> <span class= variable >data</span><span class= punctuation >[</span><span class= number >1</span><span class= punctuation >:</span><span class= punctuation >]</span><span class= punctuation >:</span>
+
+        <span class= reserved >if</span> <span class= variable >row</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >>=</span> <span class= variable >start_index</span> <span class= reserved >and</span> <span class= variable >end_index</span> <span class= operator >></span> <span class= variable >row</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span><span class= punctuation >:</span>
+
+            <span class= reserved >if</span> <span class= variable >row</span><span class= punctuation >[</span><span class= number >2</span><span class= punctuation >]</span> <span class= operator >></span> <span class= variable >highs</span><span class= punctuation >:</span>
+
+                <span class= variable >highs</span> <span class= operator >=</span> <span class= variable >row</span><span class= punctuation >[</span><span class= number >2</span><span class= punctuation >]</span>
+
+            <span class= reserved >if</span> <span class= variable >row</span><span class= punctuation >[</span><span class= number >3</span><span class= punctuation >]</span> <span class= operator ><</span> <span class= variable >lows</span><span class= punctuation >:</span>
+
+                <span class= variable >lows</span> <span class= operator >=</span> <span class= variable >row</span><span class= punctuation >[</span><span class= number >3</span><span class= punctuation >]</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= variable >f</span><span class= string >"The maximum price reached in the given interval is {highs}"</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= variable >f</span><span class= string >"The minimum price reached in the given interval is {lows}"</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >def</span> <span class= function >average</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >,</span> <span class= variable >start_index</span><span class= punctuation >,</span> <span class= variable >end_index</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= string >"""This function is called when the user chooses option 1 and creates ana verage of stock prices in the dates the user gives"""</span>
+
+    <span class= variable >total</span> <span class= operator >=</span> <span class= number >0</span>
+
+    <span class= variable >daily_average</span> <span class= operator >=</span> <span class= number >0</span>
+
+    <span class= variable >count</span> <span class= operator >=</span> <span class= number >0</span>
+
+    <span class= reserved >for</span> <span class= variable >row</span> <span class= reserved >in</span> <span class= variable >data</span><span class= punctuation >[</span><span class= number >1</span><span class= punctuation >:</span><span class= punctuation >]</span><span class= punctuation >:</span>
+
+        <span class= reserved >if</span> <span class= variable >row</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >>=</span> <span class= variable >start_index</span> <span class= reserved >and</span> <span class= variable >end_index</span> <span class= operator >></span> <span class= variable >row</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span><span class= punctuation >:</span>
+
+            <span class= variable >daily_average</span> <span class= operator >+=</span> <span class= variable >row</span><span class= punctuation >[</span><span class= number >2</span><span class= punctuation >]</span> <span class= operator >/</span> <span class= number >2</span> <span class= operator >+</span> <span class= variable >row</span><span class= punctuation >[</span><span class= number >3</span><span class= punctuation >]</span> <span class= operator >/</span> <span class= number >2</span>
+
+            <span class= variable >count</span> <span class= operator >+=</span> <span class= number >1</span>
+
+    <span class= variable >total</span> <span class= operator >=</span> <span class= variable >daily_average</span> <span class= operator >/</span> <span class= variable >count</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= variable >f</span><span class= string >"The average price for the given dates is: {total}"</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >def</span> <span class= function >get_dates</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >,</span> <span class= variable >choice</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= string >"""This function is called if the user chooses option 1 or 2 and determines the average cost of the stock those dates, or the highs and lows"""</span>
+
+    <span class= variable >starting_date</span> <span class= operator >=</span> <span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter starting date. Ex: 9/18/2017 : "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >ending_date</span> <span class= operator >=</span> <span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter ending date. Ex: 11/8/2017 : "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >current_date</span> <span class= operator >=</span> <span class= number >0</span>
+
+    <span class= variable >end_index</span> <span class= operator >=</span> <span class= reserved >False</span>
+
+    <span class= variable >start_index</span> <span class= operator >=</span> <span class= reserved >False</span>
+
+    <span class= reserved >for</span> <span class= variable >row</span> <span class= reserved >in</span> <span class= variable >data</span><span class= punctuation >:</span>
+
+        <span class= variable >current_date</span> <span class= operator >=</span> <span class= variable >row</span><span class= punctuation >[</span><span class= number >0</span><span class= punctuation >]</span>
+
+        <span class= variable >start</span> <span class= operator >=</span> <span class= function >check_start</span><span class= punctuation >(</span><span class= variable >current_date</span><span class= punctuation >,</span> <span class= variable >starting_date</span><span class= punctuation >)</span>
+
+        <span class= variable >end</span> <span class= operator >=</span> <span class= function >check_end</span><span class= punctuation >(</span><span class= variable >current_date</span><span class= punctuation >,</span> <span class= variable >ending_date</span><span class= punctuation >)</span>
+
+        <span class= reserved >if</span> <span class= variable >start</span> <span class= operator >==</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+            <span class= variable >start_index</span> <span class= operator >=</span> <span class= variable >row</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span>
+
+        <span class= reserved >elif</span> <span class= variable >end</span> <span class= operator >==</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+            <span class= variable >end_index</span> <span class= operator >=</span> <span class= variable >row</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >if</span> <span class= variable >start_index</span> <span class= operator >==</span> <span class= reserved >False</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= string >"No values for starting date, try again"</span><span class= punctuation >)</span>
+
+        <span class= reserved >if</span> <span class= variable >end_index</span> <span class= operator >==</span> <span class= reserved >False</span><span class= punctuation >:</span>
+
+            <span class= function >print</span><span class= punctuation >(</span><span class= string >"No values for ending date, try again"</span><span class= punctuation >)</span>
+
+    <span class= reserved >elif</span> <span class= variable >end_index</span> <span class= operator >==</span> <span class= reserved >False</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= string >"No values for ending date, try again"</span><span class= punctuation >)</span>
+
+        <span class= reserved >if</span> <span class= variable >start_index</span> <span class= operator >==</span> <span class= reserved >False</span><span class= punctuation >:</span>
+
+            <span class= function >print</span><span class= punctuation >(</span><span class= string >"No values for starting date, try again"</span><span class= punctuation >)</span>
+
+    <span class= reserved >elif</span> <span class= variable >choice</span> <span class= operator >==</span> <span class= number >1</span><span class= punctuation >:</span>
+
+        <span class= function >average</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >,</span> <span class= variable >start_index</span><span class= punctuation >,</span> <span class= variable >end_index</span><span class= punctuation >)</span>
+
+    <span class= reserved >else</span><span class= punctuation >:</span>
+
+        <span class= function >highs_lows</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >,</span> <span class= variable >start_index</span><span class= punctuation >,</span> <span class= variable >end_index</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >def</span> <span class= function >recs</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= string >"""This funciton is called if the user chooses choice 3, and it determines if it is better to sell or buy depending on the price the user chooses"""</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"This option will recommend to sell if the price is above the historic average, or to buy if it is below"</span><span class= punctuation >)</span>
+
+    <span class= variable >current_price</span> <span class= operator >=</span> <span class= function >float</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the current price as a decimal value: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >daily_average</span> <span class= operator >=</span> <span class= number >0</span>
+
+    <span class= variable >count</span> <span class= operator >=</span> <span class= number >0</span>
+
+    <span class= reserved >for</span> <span class= variable >row</span> <span class= reserved >in</span> <span class= variable >data</span><span class= punctuation >[</span><span class= number >1</span><span class= punctuation >:</span><span class= punctuation >]</span><span class= punctuation >:</span>
+
+        <span class= variable >daily_average</span> <span class= operator >+=</span> <span class= variable >row</span><span class= punctuation >[</span><span class= number >2</span><span class= punctuation >]</span> <span class= operator >/</span> <span class= number >2</span> <span class= operator >+</span> <span class= variable >row</span><span class= punctuation >[</span><span class= number >3</span><span class= punctuation >]</span> <span class= operator >/</span> <span class= number >2</span>
+
+        <span class= variable >count</span> <span class= operator >+=</span> <span class= number >1</span>
+
+    <span class= variable >total_average</span> <span class= operator >=</span> <span class= variable >daily_average</span> <span class= operator >/</span> <span class= variable >count</span>
+
+    <span class= reserved >if</span> <span class= variable >current_price</span> <span class= operator >></span> <span class= variable >total_average</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= string >"Sell"</span><span class= punctuation >)</span>
+
+    <span class= reserved >else</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= string >"Buy"</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= string >"""This function calls all the functions that are needed depending on th eusers input"""</span>
+
+    <span class= variable >file_name</span> <span class= operator >=</span> <span class= string >"TSLA.csv"</span>
+
+    <span class= variable >data</span> <span class= operator >=</span> <span class= function >read_file</span><span class= punctuation >(</span><span class= variable >file_name</span><span class= punctuation >)</span>
+
+    <span class= function >make_numeric</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Tesla stock data available from dates: 9/19/2017 to 9/16/2022"</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Options:"</span><span class= punctuation >)</span>
+
+    <span class= variable >choice</span> <span class= operator >=</span> <span class= number >0</span>
+
+    <span class= reserved >while</span> <span class= variable >choice</span> <span class= operator >!=</span> <span class= number >4</span><span class= punctuation >:</span>
+
+        <span class= variable >choice</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"1. Get average.  2. Get highs and lows.  3. Buy or sell recommendations  4. End  "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+        <span class= reserved >if</span> <span class= variable >choice</span> <span class= operator >==</span> <span class= number >1</span><span class= punctuation >:</span>
+
+            <span class= function >get_dates</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >,</span> <span class= variable >choice</span><span class= punctuation >)</span>
+
+        <span class= reserved >elif</span> <span class= variable >choice</span> <span class= operator >==</span> <span class= number >2</span><span class= punctuation >:</span>
+
+            <span class= function >get_dates</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >,</span> <span class= variable >choice</span><span class= punctuation >)</span>
+
+        <span class= reserved >elif</span> <span class= variable >choice</span> <span class= operator >==</span> <span class= number >3</span><span class= punctuation >:</span>
+
+            <span class= function >recs</span><span class= punctuation >(</span><span class= variable >data</span><span class= punctuation >)</span>
+
+        <span class= reserved >elif</span> <span class= variable >choice</span> <span class= operator >==</span> <span class= number >4</span><span class= punctuation >:</span>
+
+            <span class= function >print</span><span class= punctuation >(</span><span class= string >"Goodbye"</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= function >print</span><span class= punctuation >(</span><span class= string >"Invalid entry"</span><span class= punctuation >)</span>
+
+
+
+<span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<pre>
+</body>
+</html>
+
