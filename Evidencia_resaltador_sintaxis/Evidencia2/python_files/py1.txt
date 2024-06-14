@@ -1,0 +1,1153 @@
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+    #Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()
+
+#Commment
+
+
+
+def fibonacci(limit):
+    fib_numbers = [0, 1]
+    while True:
+        next_number = fib_numbers[-1] + fib_numbers[-2]
+        if next_number <= limit:
+            fib_numbers.append(next_number)
+        else:
+            break
+    return fib_numbers
+
+def main():
+    limit = int(input("Enter the limit for Fibonacci numbers: "))
+    fib_sequence = fibonacci(limit)
+    print("Fibonacci numbers up to {}:".format(limit))
+    for num in fib_sequence:
+        print(num, end=" ")
+
+if __name__ == "main":
+    main()

@@ -1,0 +1,2320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="python_css.css">
+</head>
+<body>
+<pre>
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+    <span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+
+
+
+<span class= comment >#Commment</span>
+
+
+
+
+
+
+
+<span class= reserved >def</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >fib_numbers</span> <span class= operator >=</span> <span class= punctuation >[</span><span class= number >0</span><span class= punctuation >,</span> <span class= number >1</span><span class= punctuation >]</span>
+
+    <span class= reserved >while</span> <span class= reserved >True</span><span class= punctuation >:</span>
+
+        <span class= variable >next_number</span> <span class= operator >=</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >1</span><span class= punctuation >]</span> <span class= operator >+</span> <span class= variable >fib_numbers</span><span class= punctuation >[</span><span class= operator >-</span><span class= number >2</span><span class= punctuation >]</span>
+
+        <span class= reserved >if</span> <span class= variable >next_number</span> <span class= operator ><=</span> <span class= variable >limit</span><span class= punctuation >:</span>
+
+            <span class= variable >fib_numbers</span><span class= punctuation >.</span><span class= function >append</span><span class= punctuation >(</span><span class= variable >next_number</span><span class= punctuation >)</span>
+
+        <span class= reserved >else</span><span class= punctuation >:</span>
+
+            <span class= reserved >break</span>
+
+    <span class= reserved >return</span> <span class= variable >fib_numbers</span>
+
+
+
+<span class= reserved >def</span> <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span><span class= punctuation >:</span>
+
+    <span class= variable >limit</span> <span class= operator >=</span> <span class= function >int</span><span class= punctuation >(</span><span class= function >input</span><span class= punctuation >(</span><span class= string >"Enter the limit for Fibonacci numbers: "</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= variable >fib_sequence</span> <span class= operator >=</span> <span class= function >fibonacci</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span>
+
+    <span class= function >print</span><span class= punctuation >(</span><span class= string >"Fibonacci numbers up to {}:"</span><span class= punctuation >.</span><span class= function >format</span><span class= punctuation >(</span><span class= variable >limit</span><span class= punctuation >)</span><span class= punctuation >)</span>
+
+    <span class= reserved >for</span> <span class= variable >num</span> <span class= reserved >in</span> <span class= variable >fib_sequence</span><span class= punctuation >:</span>
+
+        <span class= function >print</span><span class= punctuation >(</span><span class= variable >num</span><span class= punctuation >,</span> <span class= variable >end</span><span class= operator >=</span><span class= string >" "</span><span class= punctuation >)</span>
+
+
+
+<span class= reserved >if</span> <span class= magic >__name__</span> <span class= operator >==</span> <span class= string >"main"</span><span class= punctuation >:</span>
+
+    <span class= function >main</span><span class= punctuation >(</span><span class= punctuation >)</span>
+<pre>
+</body>
+</html>
+

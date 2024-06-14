@@ -1,0 +1,45 @@
+/* 
+CSS file to assign colors to each class of the HTML file
+The classes contain the Python tokens
+
+Emiliano Romero López   A01028415
+*/
+body {
+    background-color: #171616; 
+  }
+
+  .variable {
+    color: #e6f334; 
+  }
+  
+  .reserved {
+    color: #14a035; 
+  }
+  
+  .operator {
+    color: #dc3545; 
+  }
+  
+  .number {
+    color: #ffc107; 
+  }
+  
+  .string {
+    color: #e6dff0; 
+  }
+  
+  .comment {
+    color: #6c757d; 
+  }
+  
+  .punctuation {
+    color: #ff6e0a; 
+  }
+
+  .magic {
+    color: #f344f0fe; 
+  }
+
+  .function {
+    color: #1de3a7; 
+  }
